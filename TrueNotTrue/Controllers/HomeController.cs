@@ -15,6 +15,8 @@ namespace TrueNotTrue.Controllers
         {
             //GameHub gh = new GameHub();
             //gh.fieldRefresh();
+            DataBase Db = new DataBase();
+            ViewBag.qwerty = Db.Cards.FirstOrDefault();
             return View();
         }
         public ActionResult NewIndex()

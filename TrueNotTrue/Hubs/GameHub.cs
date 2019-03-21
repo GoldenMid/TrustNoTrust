@@ -24,10 +24,10 @@ namespace SignalRMvc.Hubs
             DB.Moves.Add(move);
             DB.SaveChanges();
             Clients.All.refreshMove();
-            PermitPass(move.Trust, move.GameId, move.CountCard);
+            PermitPass(move.Trust, move.GameId);
         }
 
-        public void PermitPass(bool? permit, int GameId, int countCard )
+        public void PermitPass(bool? permit, int GameId )
         {
             if (permit == null)
             {
@@ -35,16 +35,33 @@ namespace SignalRMvc.Hubs
 
                 if (waitModel.PlayerOneId == Context.ConnectionId)
                 {
-                    Clients.Client(waitModel.PlayerTwoId).queue("able_pass", countCard);
-                    Clients.Client(waitModel.PlayerOneId).queue("disable_pass", 0);
+                    Clients.Client(waitModel.PlayerTwoId).queue("able_pass");
+                    Clients.Client(waitModel.PlayerOneId).queue("disable_pass");
                     
                 }
                 else
                 {
-                    Clients.Client(waitModel.PlayerOneId).queue("able_pass", countCard);
-                    Clients.Client(waitModel.PlayerTwoId).queue("disable_pass", 0);
+                    Clients.Client(waitModel.PlayerOneId).queue("able_pass");
+                    Clients.Client(waitModel.PlayerTwoId).queue("disable_pass");
                 }
             }          
+        }
+
+        public void EndGame()
+        {
+            WaitModel waitModel = DB.WaitModels.FirstOrDefault(x => x.PlayerOneId == Context.ConnectionId);
+            
+            if (waitModel == null)
+            {
+                waitModel = DB.WaitModels.FirstOrDefault(x => x.PlayerTwoId == Context.ConnectionId);
+                Clients.Client(waitModel.PlayerOneId).playAgain(false);
+                Clients.Client(waitModel.PlayerTwoId).playAgain(true);
+            }
+            else
+            {
+                Clients.Client(waitModel.PlayerOneId).playAgain(true);
+                Clients.Client(waitModel.PlayerTwoId).playAgain(false);
+            }                
         }
 
         public bool CheckTrust(string[] AllCards, string FakeCard)
@@ -123,7 +140,8 @@ namespace SignalRMvc.Hubs
                 }
             }
             else
-            {               
+            {
+                
                 if (move.Trust == true)
                 {
                     string[] oneCardCompare = move.OneCard.Split('_');
@@ -192,7 +210,7 @@ namespace SignalRMvc.Hubs
                 Clients.Client(checker.PlayerOneId).getWaitModelId(checker.Id);
                 Clients.Client(checker.PlayerTwoId).getWaitModelId(checker.Id);
                 GetCards();
-                PermitPass(null, checker.Id, 0);
+                PermitPass(null, checker.Id);
             }
             DB.SaveChanges();
         }
