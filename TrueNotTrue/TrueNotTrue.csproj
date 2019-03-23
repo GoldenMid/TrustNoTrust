@@ -274,13 +274,13 @@
     <Content Include="Content\Cards\skin_8_anim.svg" />
     <Content Include="Content\Cards\skin_9.svg" />
     <Content Include="Content\Cards\skin_9_anim.svg" />
+    <Content Include="Content\favicon.jpg" />
     <Content Include="Content\loading.css" />
     <Content Include="Content\media.css" />
-    <Content Include="Content\ouroboros.svg" />
+    <Content Include="Content\ouroboros_light_s.svg" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\animation.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />

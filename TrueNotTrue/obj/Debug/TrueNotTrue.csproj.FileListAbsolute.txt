@@ -176,3 +176,5 @@ F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Debug\True
 F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Debug\TrueNotTrue.csprojAssemblyReference.cache
 F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Debug\TrueNotTrue.Migrations.TrueNotTrueDataBase.resources
 F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Debug\TrueNotTrue.csproj.GenerateResource.cache
+F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\bin\EntityFramework.SqlServer.dll
+F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\bin\EntityFramework.SqlServer.xml

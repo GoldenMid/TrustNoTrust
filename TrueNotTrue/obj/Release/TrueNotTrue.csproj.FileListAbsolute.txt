@@ -37,3 +37,6 @@ F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Release\Tr
 F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Release\TrueNotTrue.csproj.CopyComplete
 F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Release\TrueNotTrue.dll
 F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Release\TrueNotTrue.pdb
+F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\bin\EntityFramework.SqlServer.dll
+F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\bin\EntityFramework.SqlServer.xml
+F:\_All projects\Web Projects\TrueNotTrue\TrueNotTrue\TrueNotTrue\obj\Release\TrueNotTrue.csprojAssemblyReference.cache

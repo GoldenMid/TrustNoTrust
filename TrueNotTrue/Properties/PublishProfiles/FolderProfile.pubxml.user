@@ -12,6 +12,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/23/2017 13:15:18</publishTime>
     </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/23/2017 13:15:20</publishTime>
+    </File>
     <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
@@ -31,10 +34,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/13/2014 16:11:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>05/01/2012 11:08:46</publishTime>
+      <publishTime>01/05/2012 11:08:46</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>03/08/2014 20:33:56</publishTime>
+      <publishTime>08/03/2014 20:33:56</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>11/13/2012 12:19:34</publishTime>
@@ -202,10 +205,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 03:04:30</publishTime>
     </File>
     <File Include="bin/TrueNotTrue.dll">
-      <publishTime>03/21/2019 23:50:42</publishTime>
+      <publishTime>03/23/2019 15:55:13</publishTime>
     </File>
     <File Include="bin/TrueNotTrue.pdb">
-      <publishTime>03/21/2019 23:50:42</publishTime>
+      <publishTime>03/23/2019 15:55:13</publishTime>
     </File>
     <File Include="Content/animate.css">
       <publishTime>03/03/2019 18:21:02</publishTime>
@@ -715,7 +718,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/21/2019 00:55:50</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>03/21/2019 23:50:02</publishTime>
+      <publishTime>03/23/2019 15:53:35</publishTime>
     </File>
     <File Include="Views/Home/NewIndex.cshtml">
       <publishTime>03/03/2019 17:30:50</publishTime>
@@ -730,7 +733,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/12/2018 14:42:03</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/21/2019 23:50:43</publishTime>
+      <publishTime>03/23/2019 15:55:14</publishTime>
     </File>
   </ItemGroup>
 </Project>

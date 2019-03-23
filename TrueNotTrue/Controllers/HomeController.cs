@@ -13,10 +13,6 @@ namespace TrueNotTrue.Controllers
     {
         public ActionResult Index()
         {
-            //GameHub gh = new GameHub();
-            //gh.fieldRefresh();
-            DataBase Db = new DataBase();
-            ViewBag.qwerty = Db.Cards.FirstOrDefault();
             return View();
         }
         public ActionResult NewIndex()
